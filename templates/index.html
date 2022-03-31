@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <h1>Stroke Prediction </h1>
+    <p>Here for Hypertension and Heart_disease only two values are excepted those are 0 = no and 1 = yes </p>
+    <form action="{{ url_for("gfg")}}" method="post">
+    <label for="gender">gender:</label>
+  <select id="gender" name="gender">
+    <option value="1">Male</option>
+      <option value="0">Female</option>
+    </select>
+<label for="age">age in years:</label>
+<input type="number" id="age" name="age" placeholder="age">
+
+     <label for="hypertension">hypertension:</label>
+<input type="number" id="hypertension" name="hypertension" placeholder="hypertension">
+
+    <label for="heart_disease">heart_disease:</label>
+<input type="number" id="heart_disease" name="heart_disease" placeholder="heart_disease">
+
+    <label for="ever_married"> ever_married: </label>
+  <select id="ever_married" name="ever_married">
+    <option value="1">Yes</option>
+    <option value="0">No</option>
+  </select>
+     <label for="work_type"> work_type : </label>
+  <select id="work_type" name="work_type">
+    <option value="2">Private</option>
+    <option value="3">Self-employed	</option>
+      <option value="0">Govt_job</option>
+    <option value="4">children	</option>
+      <option value="1">Never_worked</option>
+  </select>
+<label for="Residence_type">Residence_type:</label>
+  <select id="Residence_type" name="Residence_type">
+    <option value="1">Urban</option>
+    <option value="0">Rural </option>
+  </select>
+
+
+<label for="avg_glucose_level">avg_glucose_level:</label>
+<input type="text" id="avg_glucose_level" name="avg_glucose_level" placeholder="avg_glucose_level">
+
+   <label for="bmi">bmi:</label>
+<input type="text" id="bmi" name="bmi" placeholder="bmi">
+
+
+
+    <label for="smoking_status">smoking_status:</label>
+  <select id="smoking_status" name="smoking_status">
+    <option value="1">formerly smoked</option>
+    <option value="2">never smoked </option>
+      <option value="3">smokes </option>
+    <option value="0">Unknown </option>
+  </select>
+
+<button type="submit">Predict</button>
+</body>
+</html>
